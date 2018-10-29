@@ -18,6 +18,25 @@ $(function(){
                 $("#expanding>li").eq(i).removeClass("active");
             })
 
+            //搜索
+            /*
+            var $btnSearch=$("#rightFixed>div:last-child>a img"),
+                $input=$btnSearch.parent().prev();
+            $btnSearch.click(function(){
+                var kw=$input.val().trim();
+                if(kw!=="") location.href=`products.html?kwords=${kw}`;
+            })
+            $input.keyup(function(e){
+                if(e.keyCode==13){
+                    $btnSearch.click();
+                }
+            })
+            if(location.search.indexOf("kwords")!=-1){
+                var kwords=decodeURI(location.search.split("=")[1]);
+                $input.val(kwords);
+            }
+            */
+
             //登录跳转
             $("#btnSignin").click(function(){
                 location.href="signin.html?back="+location.href;

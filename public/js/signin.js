@@ -21,4 +21,10 @@ $(function(){//dom内容加载后就提前触发
             }
         })()
     })
+    var $btnSignin=$("section");
+    $btnSignin.keyup(function(e){
+        if(e.keyCode==13){
+            $("input.myBtn").click();
+        }
+    })
 })

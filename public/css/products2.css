@@ -205,7 +205,7 @@ section div.right .displays .product .choices div{
 }
 @media screen and (min-width:1440px){
     section{
-        width:80%;
+        width:1440px;
     }
     section .top{
         width:100%;
