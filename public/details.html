@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width，initial-scale=1.0">
+    <link rel="styleSheet" href="css/bootstrap.css">
+    <link rel="styleSheet" href="css/base.css">
+    <link rel="styleSheet" href="css/details2.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Details</title>
+
+</head>
+<body>
+<!--header-->
+<iframe src="header.html" frameborder="0" class="my_header"></iframe>
+<!--section-->
+<section>
+    <!--头部第一行右上角-->
+    <div id="right">
+        <div class="rightBlock right1">
+            <a href="#">Make an Appointment</a>
+        </div>
+        <div class="rightBlock right2">
+            <a href="#"><img src="../img/index/header/shoppingbag.png" alt=""></a>
+        </div>
+        <div class="rightBlock right3">
+            <a href="">Find a Store</a>
+        </div>
+        <div class="rightBlock right4">
+            <input type="text" placeholder="Search">
+        </div>
+        <a href="#" class="searchBtn"><img src="../img/index/header/search.png" alt=""></a>
+    </div>
+    <!--头部导航-->
+    <div id="my_nav">
+        <ul class="my_row">
+            <!--头部导航：BRIDES-->
+            <li class="my_col col_brides">
+                <a href="" class="colNames">BRIDES</a>
+                <!--下拉菜单-->
+                <div class="expanding expanding_brides">
+                    <dl>
+                        <dt class="nameMain">Explore
+                        <dd class="nameOthers"><a href="#">Wedding Dress Finder</a></dd>
+                        <dd class="nameOthers"><a href="#">Wedding Dresses 101</a></dd>
+                        <dd class="nameOthers"><a href="#">Plus Size Guide</a></dd>
+                        <dd class="nameOthers"><a href="#">Petite Size Guide</a></dd>
+                        <dd class="nameOthers"><a href="#">Wedding Themes</a></dd>
+                        <dd class="nameOthers"><a href="#">Silhouette Guide</a></dd>
+                        <dd class="nameOthers"><a href="#">Fall 2018 Collection</a></dd>
+                        <dd class="nameOthers"><a href="#">Meet the Brands</a></dd>
+                        <dd class="nameOthers"><a href="#">Getting Started</a></dd>
+                        <dd class="nameOthers"><a href="#">Wedding Wardrobe</a></dd>
+                        <dd class="nameOthers"><a href="#">Look Books</a></dd>
+                        <dd class="nameOthers"><a href="#">Real Weddings</a></dd>
+                        <dd class="nameOthers"><a href="#">Wedding Planning Guide</a></dd>
+                        <dd class="nameOthers"><a href="#">Preserve Your Gown</a></dd>
+                        <dd class="nameOthers"><a href="#">Quality & Craftsmanship</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain brides_wedding_dresses">Wedding Dresses
+                        <dd class="nameOthers"><a href="">All Wedding Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">New Arrivals</a></dd>
+                        <dd class="nameOthers"><a href="">Plus Size</a></dd>
+                        <dd class="nameOthers"><a href="">Petite</a></dd>
+                        <dd class="nameOthers"><a href="">Tall</a></dd>
+                        <dd class="nameOthers"><a href="">Mermaid/Trumpet</a></dd>
+                        <dd class="nameOthers"><a href="">A-Line</a></dd>
+                        <dd class="nameOthers"><a href="">Ball Gown</a></dd>
+                        <dd class="nameOthers"><a href="">Lace</a></dd>
+                        <dd class="nameOthers"><a href="">Long Sleeve</a></dd>
+                        <dd class="nameOthers"><a href="">Sheath</a></dd>
+                        <dd class="nameOthers"><a href="">Short</a></dd>
+                        <dd class="nameOthers"><a href="">Under $200</a></dd>
+                        <dd class="nameOthers"><a href="">Sample Sale</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain brides_collections">Collections
+                        <dd class="nameOthers"><a href="">White by Vera Wang</a></dd>
+                        <dd class="nameOthers"><a href="">Oleg Cassini</a></dd>
+                        <dd class="nameOthers"><a href="">David's Bridal Collection</a></dd>
+                        <dd class="nameOthers"><a href="">Tadashi Shoji</a></dd>
+                        <dd class="nameOthers"><a href="">Galina</a></dd>
+                        <dd class="nameOthers"><a href="">DB Studio</a></dd>
+                        <dd class="nameOthers"><a href="">All Designer Wedding Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Casual Wedding Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Little White Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Modern Wedding Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Flower Girl</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain brides_wedding_accessories">Wedding Accessories
+                        <dd class="nameOthers"><a href="">Veils</a></dd>
+                        <dd class="nameOthers"><a href="">Bridal Shoes</a></dd>
+                        <dd class="nameOthers"><a href="">Bridal Lingerie</a></dd>
+                        <dd class="nameOthers"><a href="">Slips & Shapewear</a></dd>
+                        <dd class="nameOthers"><a href="">Jackets & Wraps</a></dd>
+                        <dd class="nameOthers"><a href="">Hair Accessories</a></dd>
+                        <dd class="nameOthers"><a href="">Belts & Sashes</a></dd>
+                        <dd class="nameOthers"><a href="">Bras</a></dd>
+                        <dd class="nameOthers"><a href="">Jewelry</a></dd>
+                        </dt>
+                    </dl>
+                    <dl id="expanding_brides_img">
+                        <dt>
+                            <img src="../img/index/header/header_flyout_1.jpg" alt="">
+                        <dd class="nav_expand_link"><a href="">MATERNITY WEDDING DRESSES NOW AVAILABLE! STARTING AT $299 ></a></dd>
+                        </dt>
+                    </dl>
+                </div>
+            </li>
+            <!--头部导航：BRIDESMAIDS-->
+            <li class="my_col col_bridesmaids">
+                <a href="" class="colNames">BRIDESMAIDS</a>
+                <!--下拉菜单-->
+                <div class="expanding expanding_bridesmaids">
+                    <dl>
+                        <dt class="nameMain">Explore
+                        <dd class="nameOthers"><a href="">Color Chart</a></dd>
+                        <dd class="nameOthers"><a href="">Wedding Colors & Bridal Party Ideas</a></dd>
+                        <dd class="nameOthers"><a href="">Style Finder Quiz</a></dd>
+                        <dd class="nameOthers"><a href="">Wedding Colors by Season</a></dd>
+                        <dd class="nameOthers"><a href="">Mismatched Bridesmaid</a></dd>
+                        <dd class="nameOthers"><a href="">Convertible Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Color Inspiration</a></dd>
+                        <dd class="nameOthers"><a href="">Look Books</a></dd>
+                        <dd class="nameOthers"><a href="">Real Bridesmaids</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Bridesmaid Dresses
+                        <dd class="nameOthers"><a href="">All Bridesmaid Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">New Arrivals</a></dd>
+                        <dd class="nameOthers"><a href="">Long Bridesmaid Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Short Bridesmaid Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Junior Bridesmaid Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Plus Size Bridesmaid Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Lace Bridesmaid Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Maternity Friendly Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Tall Bridesmaid Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Convertible Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Color Swatches</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Designer
+                        <dd class="nameOthers"><a href="">White by Vera Wang</a></dd>
+                        <dd class="nameOthers"><a href="">Oleg Cassini</a></dd>
+                        <dd class="nameOthers"><a href="">Reverie</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Bridesmaid Accessories
+                        <dd class="nameOthers"><a href="">Bridesmaid Shoes</a></dd>
+                        <dd class="nameOthers"><a href="">Jackets & Wraps</a></dd>
+                        <dd class="nameOthers"><a href="">Jewelry</a></dd>
+                        <dd class="nameOthers"><a href="">Sashes & Belts</a></dd>
+                        <dd class="nameOthers"><a href="">Slips & Shapewear</a></dd>
+                        <dd class="nameOthers"><a href="">Hair Accessories</a></dd>
+                        <dd class="nameOthers"><a href="">Handbags</a></dd>
+                        </dt>
+                    </dl>
+                    <dl id="expanding_bridesmaids_img">
+                        <dt>
+                            <img src="../img/index/header/flyout_2.jpg" alt="">
+                        <dd class="nav_expand_link"><a href="">OUR DRESS FINDER CAN HELP YOU PICK THE PERFECT LOOK FOR YOUR BRIDAL PARTY ></a></dd>
+                        </dt>
+                    </dl>
+                </div>
+            </li>
+            <!--头部导航：DRESSES-->
+            <li class="my_col col_dresses">
+                <a href="" class="colNames">DRESSES</a>
+                <!--下拉菜单-->
+                <div class="expanding expanding_dresses">
+                    <dl>
+                        <dt class="nameMain">Explore
+                        <dd class="nameOthers"><a href="">Mother of the Bride Guide</a></dd>				  			                <dd class="nameOthers"><a href="">Guest of Wedding Guide</a></dd>
+                        <dd class="nameOthers"><a href="">Casual Wedding Ideas</a></dd>
+                        <dd class="nameOthers"><a href="">What to Wear to Every Wedding Event</a></dd>
+                        <dd class="nameOthers"><a href="">Special Occasions Guide</a></dd>
+                        <dd class="nameOthers"><a href="">Flower Girl Guide</a></dd>
+                        <dd class="nameOthers"><a href="">Special Occasion Dress Finder</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Dresses
+                        <dd class="nameOthers"><a href="">All Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Plus Size Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Petite Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Maternity Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Girls Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Flower Girl Dresses</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Collections
+                        <dd class="nameOthers"><a href="">Mother of the Bride</a></dd>
+                        <dd class="nameOthers"><a href="">Guest of Wedding</a></dd>
+                        <dd class="nameOthers"><a href="">Formal & Evening</a></dd>
+                        <dd class="nameOthers"><a href="">Cocktail & Party</a></dd>
+                        <dd class="nameOthers"><a href="">Jumpsuits & Pantsuits</a></dd>
+                        <dd class="nameOthers"><a href="">Prom</a></dd>
+                        <dd class="nameOthers"><a href="">Little White Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Homecoming</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Accessories
+                        <dd class="nameOthers"><a href="">Shoes</a></dd>
+                        <dd class="nameOthers"><a href="">Jackets & Wraps</a></dd>
+                        <dd class="nameOthers"><a href="">Jewelry</a></dd>
+                        <dd class="nameOthers"><a href="">Sashes & Belts</a></dd>
+                        <dd class="nameOthers"><a href="">Slips & Shapewear</a></dd>
+                        <dd class="nameOthers"><a href="">Hair Accessories</a></dd>
+                        <dd class="nameOthers"><a href="">Handbags</a></dd>
+                        <dd class="nameOthers"><a href="">Flower Girl Accessories</a></dd>
+                        </dt>
+                    </dl>
+                    <dl id="expanding_dresses_img">
+                        <dt>
+                            <img src="../img/index/header/flyout_3.jpg" alt="">
+                        <dd class="nav_expand_link"><a href="">STYLES FOR MOM, NOW $20 OFF ></a></dd>
+                        </dt>
+                    </dl>
+                </div>
+            </li>
+            <!--头部导航：ACCESSORIES-->
+            <li class="my_col col_accessories">
+                <a href="" class="colNames">ACCESSORIES</a>
+                <!--下拉菜单-->
+                <div class="expanding expanding_accessories">
+                    <dl>
+                        <dt class="nameMain">Accessories
+                        <dd class="nameOthers"><a href="">All Accessories</a></dd>
+                        <dd class="nameOthers"><a href="">Jewelry</a></dd>
+                        <dd class="nameOthers"><a href="">Hair Accessories</a></dd>
+                        <dd class="nameOthers"><a href="">Veils</a></dd>
+                        <dd class="nameOthers"><a href="">Belts & Sashes</a></dd>
+                        <dd class="nameOthers"><a href="">Jackets & Wraps</a></dd>
+                        <dd class="nameOthers"><a href="">Handbags</a></dd>
+                        <dd class="nameOthers"><a href="">Flower Girl Accessories</a></dd>
+                        <dd class="nameOthers"><a href="">Gloves</a></dd>
+                        <dd class="nameOthers"><a href="">Garment Bags</a></dd>
+                        <dd class="nameOthers"><a href="">Wedding Dress Preservation</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Headpieces
+                        <dd class="nameOthers"><a href="">Mid-Length Veils</a></dd>
+                        <dd class="nameOthers"><a href="">Cathedral Veils</a></dd>
+                        <dd class="nameOthers"><a href="">Blushers</a></dd>
+                        <dd class="nameOthers"><a href="">Short Veils</a></dd>
+                        <dd class="nameOthers"><a href="">Headbands</a></dd>
+                        <dd class="nameOthers"><a href="">Tiaras</a></dd>
+                        <dd class="nameOthers"><a href="">Combs</a></dd>
+                        <dd class="nameOthers"><a href="">Girls Headpieces</a></dd>
+                        <dd class="nameOthers"><a href="">Hairpins</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Lingerie
+                        <dd class="nameOthers"><a href="">All Lingerie</a></dd>
+                        <dd class="nameOthers"><a href="">Slips & Shapewear</a></dd>
+                        <dd class="nameOthers"><a href="">Bras</a></dd>
+                        <dd class="nameOthers"><a href="">Robes</a></dd>
+                        <dd class="nameOthers"><a href="">Honeymoon Lingerie</a></dd>
+                        <dd class="nameOthers"><a href="">Garters</a></dd>
+                        <dd class="nameOthers"><a href="">Panties</a></dd>
+                        <dd class="nameOthers"><a href="">Lingerie Solutions</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Explore
+                        <dd class="nameOthers"><a href="">Completing Your Look Guide</a></dd>
+                        <dd class="nameOthers"><a href="">Veil Guide</a></dd>
+                        <dd class="nameOthers"><a href="">Headpiece Guide</a></dd>
+                        <dd class="nameOthers"><a href="">Shapewear Guide</a></dd>
+                        <dd class="nameOthers"><a href="">Bra Guide</a></dd>
+                        <dd class="nameOthers"><a href="">Neckline & Jewelry Guide</a></dd>
+                        <dd class="nameOthers"><a href="">5 Must-Have Wedding Shoes</a></dd>
+                        <dd class="nameOthers"><a href="">4 Lookds for Less</a></dd>
+                        <dd class="nameOthers"><a href="">Accessorizing Your Bridal Party</a></dd>
+                        <dd class="nameOthers"><a href="">DB Accessories</a></dd>
+                        </dt>
+                    </dl>
+                    <dl id="expanding_accessories_img">
+                        <dt>
+                            <img src="../img/index/header/flyout_4.jpg" alt="">
+                        <dd class="nav_expand_link"><a href="">JEWELRY STARTING AT $10 ></a></dd>
+                        </dt>
+                    </dl>
+                </div>
+            </li>
+            <!--头部导航：GIFTS & DECORATIONS-->
+            <li class="my_col col_gifts_decorations">
+                <a href="" class="colNames">GIFTS & DECORATIONS</a>
+                <!--下拉菜单-->
+                <div class="expanding expanding_gifts_decorations">
+                    <dl>
+                        <dt class="nameMain">Explore
+                        <dd class="nameOthers"><a href="">Bridesmaid Gift Guide</a></dd>
+                        <dd class="nameOthers"><a href="">Wedding Favor Ideas</a></dd>
+                        <dd class="nameOthers"><a href="">Wedding Party Gift Guide</a></dd>
+                        <dd class="nameOthers"><a href="">Completing Your Day Guide</a></dd>
+                        <dd class="nameOthers"><a href="">Wedding Gift Ideas</a></dd>
+                        <dd class="nameOthers"><a href="">Engagement Gift Guide</a></dd>
+                        <dd class="nameOthers"><a href="">Wedding Invitations</a></dd>
+                        <dd class="nameOthers"><a href="">Wedding Flower Inspiration</a></dd>
+                        <dd class="nameOthers"><a href="">Wedding Decor Guide</a></dd>
+                        <dd class="nameOthers"><a href="">Ultimate Wedding Checklist</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Gifts
+                        <dd class="nameOthers"><a href="">All Gifts</a></dd>
+                        <dd class="nameOthers"><a href="">Bridesmaid Gifts</a></dd>
+                        <dd class="nameOthers"><a href="">Bride Gifts</a></dd>
+                        <dd class="nameOthers"><a href="">Robes & Apparel</a></dd>
+                        <dd class="nameOthers"><a href="">Parent Gifts</a></dd>
+                        <dd class="nameOthers"><a href="">Groom Gifts</a></dd>
+                        <dd class="nameOthers"><a href="">Groomsmen Gifts</a></dd>
+                        <dd class="nameOthers"><a href="">Flower Girl Gifts</a></dd>
+                        <dd class="nameOthers"><a href="">Ring Bearer Gifts</a></dd>
+                        <dd class="nameOthers"><a href="">Totes & Cosmetic Cases</a></dd>
+                        <dd class="nameOthers"><a href="">Personalized Gifts</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Wedding Essentials
+                        <dd class="nameOthers"><a href="">Ceremoney Decorations</a></dd>
+                        <dd class="nameOthers"><a href="">Reception Decorations</a></dd>
+                        <dd class="nameOthers"><a href="">Wedding Decorations</a></dd>
+                        <dd class="nameOthers"><a href="">Favors</a></dd>
+                        <dd class="nameOthers"><a href="">Cake Toppers</a></dd>
+                        <dd class="nameOthers"><a href="">Flower Girl Baskets</a></dd>
+                        <dd class="nameOthers"><a href="">Ring Bearer Pillows</a></dd>
+                        <dd class="nameOthers"><a href="">Unity Ceremony</a></dd>
+                        <dd class="nameOthers"><a href="">Guest Books</a></dd>
+                        <dd class="nameOthers"><a href="">Wedding Signs</a></dd>
+                        <dd class="nameOthers"><a href="">Personalized Decorations</a></dd>
+                        <dd class="nameOthers"><a href="">Pet Accessories</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Stationery
+                        <dd class="nameOthers"><a href="">Invitations</a></dd>
+                        <dd class="nameOthers"><a href="">Save the Dates</a></dd>
+                        <dd class="nameOthers"><a href="">Thank You Cards</a></dd>
+                        <dd class="nameOthers"><a href="">Wedding Programs</a></dd>
+                        <dd class="nameOthers"><a href="">Place Cards</a></dd>
+                        <dd class="nameOthers"><a href="">Menu Cards</a></dd>
+                        <dd class="nameOthers"><a href="">Address Labels</a></dd>
+                        </dt>
+                    </dl>
+                    <dl id="expanding_gifts_decorations_img">
+                        <dt>
+                            <img src="../img/index/header/flyout_5.jpg" alt="">
+                        <dd class="nav_expand_link"><a href="">GIFTS FOR ALL - WITH FREE PERSONALIZATION ></a></dd>
+                        </dt>
+                    </dl>
+                </div>
+            </li>
+            <!--头部导航：SHOES-->
+            <li class="my_col col_shoes">
+                <a href="" class="colNames">SHOES</a>
+                <!--下拉菜单-->
+                <div class="expanding expanding_shoes">
+                    <dl>
+                        <dt class="nameMain">Explore
+                        <dd class="nameOthers"><a href="">6 Must-Have Bridal Shoes</a></dd>
+                        <dd class="nameOthers"><a href="">Dyeable Shoes Guide</a></dd>
+                        <dd class="nameOthers"><a href="">Unconventional Bridal Shoes</a></dd>
+                        <dd class="nameOthers"><a href="">Something Blue</a></dd>
+                        <dd class="nameOthers"><a href="">DB Accessories</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Shoes
+                        <dd class="nameOthers"><a href="">All Shoes</a></dd>
+                        <dd class="nameOthers"><a href="">Bridal Shoes</a></dd>
+                        <dd class="nameOthers"><a href="">Flower Girl Shoes</a></dd>
+                        <dd class="nameOthers"><a href="">Evening Shoes</a></dd>
+                        <dd class="nameOthers"><a href="">Wide Width Shoes</a></dd>
+                        <dd class="nameOthers"><a href="">Dyeable Shoes</a></dd>
+                        <dd class="nameOthers"><a href="">Designer Shoes</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Shop by Color
+                        <dd class="nameOthers"><a href="">Silver</a></dd>
+                        <dd class="nameOthers"><a href="">Rose Gold</a></dd>
+                        <dd class="nameOthers"><a href="">Gold</a></dd>
+                        <dd class="nameOthers"><a href="">Nude</a></dd>
+                        <dd class="nameOthers"><a href="">Champagne</a></dd>
+                        <dd class="nameOthers"><a href="">Ivory</a></dd>
+                        <dd class="nameOthers"><a href="">White</a></dd>
+                        <dd class="nameOthers"><a href="">Black</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Shop by Style
+                        <dd class="nameOthers"><a href="">Sandals</a></dd>
+                        <dd class="nameOthers"><a href="">Pumps & Heels</a></dd>
+                        <dd class="nameOthers"><a href="">Wedges</a></dd>
+                        <dd class="nameOthers"><a href="">Ballet Flats</a></dd>
+                        <dd class="nameOthers"><a href="">Sneakers & Casual</a></dd>
+                        <dd class="nameOthers"><a href="">Flip Flops</a></dd>
+                        <dd class="nameOthers"><a href="">Peep Toes</a></dd>
+                        </dt>
+                    </dl>
+                    <dl id="expanding_shoes_img">
+                        <dt>
+                            <img src="../img/index/header/flyout_6.jpg" alt="">
+                        <dd class="nav_expand_link"><a href="">BUY ONE, GET ONE 50% OFF ></a></dd>
+                        </dt>
+                    </dl>
+                </div>
+            </li>
+            <li class="my_col col_prom">
+                <a href="" class="colNames">PROM</a>
+                <!--下拉菜单-->
+                <div class="expanding expanding_prom">
+                    <dl>
+                        <dt class="nameMain">Explore
+                        <dd class="nameOthers"><a href="">Prom Trend Report</a></dd>
+                        <dd class="nameOthers"><a href="">Homecoming Trends</a></dd>
+                        <dd class="nameOthers"><a href="">Host a Fashion Show</a></dd>
+                        <dd class="nameOthers"><a href="">Prom Checklist</a></dd>
+                        <dd class="nameOthers"><a href="">Jordyn Woods Talks Prom</a></dd>
+                        <dd class="nameOthers"><a href="">DB Prom</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Prom
+                        <dd class="nameOthers"><a href="">All Prom Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">New Arrivals</a></dd>
+                        <dd class="nameOthers"><a href="">Homecoming Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Long Prom Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Short Prom Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Plus Size Prom Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Two-Piece Prom Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Quinceanera Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Graduation Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Online Exclusives</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Prom Accessories
+                        <dd class="nameOthers"><a href="">Shoes</a></dd>
+                        <dd class="nameOthers"><a href="">Hair Accesories</a></dd>
+                        <dd class="nameOthers"><a href="">Jewelry</a></dd>
+                        <dd class="nameOthers"><a href="">Shapewear</a></dd>
+                        <dd class="nameOthers"><a href="">Bras</a></dd>
+                        <dd class="nameOthers"><a href="">Handbags</a></dd>
+                        </dt>
+                    </dl>
+                    <dl id="expanding_prom_img">
+                        <dt>
+                            <img src="../img/index/header/flyout_7.jpg" alt="">
+                        <dd class="nav_expand_link"><a href="">TAKE $10 OFF YOUR DRESS! SIGN UP NOW </a>></dd>
+                        </dt>
+                    </dl>
+                </div>
+            </li>
+            <li class="my_col col_sale">
+                <a href="" class="colNames col-8">SALE</a>
+                <div class="expanding expanding_sale">
+                    <dl>
+                        <dt class="nameMain">Explore
+                        <dd class="nameOthers"><a href="">Daily Deals</a></dd>
+                        <dd class="nameOthers"><a href="">Wedding Planning Guide</a></dd>
+                        <dd class="nameOthers"><a href="">Budget Tips from Real Brides</a></dd>
+                        <dd class="nameOthers"><a href="">How to Set a Wedding Budget</a></dd>
+                        <dd class="nameOthers"><a href="">Your Ultimate Wedding Checklist</a></dd>
+                        <dd class="nameOthers"><a href="">Savings from Our Partners</a></dd>
+                        <dd class="nameOthers"><a href="">DB Rewards</a></dd>
+                        <dd class="nameOthers"><a href="">Real Weddings</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">All Sale
+                        <dd class="nameOthers"><a href="">All Sale</a></dd>
+                        <dd class="nameOthers"><a href="">Sample Sale</a></dd>
+                        <dd class="nameOthers"><a href="">Final Sale</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Dresses
+                        <dd class="nameOthers"><a href="">All Sale Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Sale Wedding Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Sale Bridesmaid Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Sale Party Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Sale Mother of the Bride</a></dd>
+                        <dd class="nameOthers"><a href="">Sale Prom Dresses</a></dd>
+                        <dd class="nameOthers"><a href="">Sale Flower Girl Dresses</a></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="nameMain">Accessories
+                        <dd class="nameOthers"><a href=""></a></dd>
+                        <dd class="nameOthers"><a href="">All Sale Accessories</a></dd>
+                        <dd class="nameOthers"><a href="">Wedding Decorations & Gifts</a></dd>
+                        <dd class="nameOthers"><a href="">Shoes</a></dd>
+                        <dd class="nameOthers"><a href="">Veils</a></dd>
+                        <dd class="nameOthers"><a href="">Hair Accessories</a></dd>
+                        <dd class="nameOthers"><a href="">Belts & Sashes</a></dd>
+                        <dd class="nameOthers"><a href="">Jewelry</a></dd>
+                        <dd class="nameOthers"><a href="">Lingerie</a></dd>
+                        <dd class="nameOthers"><a href="">Jackets & Wraps</a></dd>
+                        <dd class="nameOthers"><a href="">Handbags</a></dd>
+                        </dt>
+                    </dl>
+                    <dl id="expanding_sale_img">
+                        <dt>
+                            <img src="../img/index/header/flyout_8.jpg" alt="">
+                        <dd class="nav_expand_link"><a href="">SHOP THE ONLINE SAMPLE SALE FOR UP TO 75% OFF—DRESSES START AT $148.48 ></a></dd>
+                        </dt>
+                    </dl>
+                </div>
+            </li>
+            <li class="my_col col_the_blog">
+                <a href="" class="colNames">THE BLOG</a>
+            </li>
+        </ul>
+    </div>
+    <!--商品详情区-->
+    <!--商品详情左侧-->
+    <div class="top">
+        <a href="#" class="myFont1">&lt;BACK TO RESULTS</a>
+    </div>
+    <div class="row productInfo">
+        <div class="col col-md-7">
+            <div class="row pics">
+                <div class="col col-md-2">
+                    <ul>
+                        <li><img src="../img/products/details/20181011193731(01)-sm.png" alt=""></li>
+                        <li><img src="../img/products/details/20181011193731(02)-sm.png" alt=""></li>
+                        <li><img src="../img/products/details/20181011193731(03)-sm.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="col col-md-10">
+                    <img src="../img/products/details/20181011193731(01)-md.png" alt="">
+                    <img src="../img/products/details/20181011193731(02)-md.png" alt="" hidden>
+                    <img src="../img/products/details/20181011193731(03)-md.png" alt="" hidden>
+                    <div id="shareLink">
+                        <div>
+                            <span>Share this:</span>
+                            <a href="#"><img src="../img/icons/PinterestColored.png" alt=""></a>
+                            <a href="#"><img src="../img/icons/email.png" alt=""></a>
+                            <a href="#"><img src="../img/icons/Facebook.png" alt=""></a>
+                            <a href="#"><img src="../img/icons/twitter.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div id="pinkBlock">
+                        <div>
+                            <p>Win your wedding gown or up to 5 bridesmaid dresses</p>
+                            <a href="#">ENTER NOW &gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--商品详情右侧-->
+        <div class="col col-md-5 right">
+            <h4>Embellished-Waist Long Mesh Bridesmaid Dress</h4>
+            <h5>JJ's House</h5>
+            <span class="myFont3"><span>AP1E200446</span>&nbsp;-&nbsp;<i>Online Only</i></span>
+            <p class="price">
+                <s>$119.95</s>
+                <span>&nbsp;Now $59.99</span>
+                <span>FINAL SALE</span>
+            </p>
+            <!--星级及评论按钮待补充
+            <div>
+                <a href="">Read reviews</a>
+                <a href="">Write a review</a>
+            </div>
+            -->
+            <div class="blocks" id="colorOptions">
+                <span class="detailName myFont1">COLOR</span>
+                <select name="" class="myFont3">
+                    <option value="" selected>Select color</option>
+                    <option value="">Coral</option>
+                    <option value="">Currant</option>
+                    <option value="">Midnight</option>
+                </select>
+                <div class="colorChoices">
+                    <div class="outer">
+                        <a href="#"><div class="inner"></div></a>
+                    </div>
+                    <div class="outer">
+                        <a href="#"><div class="inner"></div></a>
+                    </div>
+                    <div class="outer">
+                        <a href="#"><div class="inner"></div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blocks" id="sizeOptions">
+                <span class="detailName myFont1">SIZE</span>
+                <div class="sizeChoices">
+                    <a href=""><div>0</div></a>
+                    <a href=""><div>2</div></a>
+                    <a href=""><div>4</div></a>
+                    <a href=""><div>6</div></a>
+                    <a href=""><div>8</div></a>
+                    <a href=""><div>10</div></a>
+                    <a href=""><div>12</div></a>
+                    <a href=""><div>14</div></a>
+                    <a href=""><div>16</div></a>
+                    <a href=""><div>18</div></a>
+                    <a href=""><div>20</div></a>
+                </div>
+                <a href="#" class="myFont3">Fit & Sizing Guide</a>
+            </div>
+            <div class="blocks">
+                <span class="detailName myFont2">QUANTITY</span>
+                <input type="text" value="1">
+            </div>
+            <div id="totalCost">
+                <span class="myFont2">Your selections cost:</span>
+                <input type="text" value="">
+            </div>
+            <a href="#" id="addTo">
+                <div>ADD TO SHOPPING BAG</div>
+            </a>
+        </div>
+    </div>
+    <div id="info">
+        <ul>
+            <a href="javascript:myEvents.children[0].onclick();" class="one mouseClick">
+                <li class="myFont2">DESCRIPTION</li>
+            </a>
+            <a href="javascript:myEvents.children[1].onclick();" class="two">
+                <li class="myFont2">SHIPPING & RETURNS</li>
+            </a>
+        </ul>
+        <div class="content content1">
+            <span>Featuring a prettily pleated bodice that dips into a notched sweetheart neckline, this light and airy long mesh bridesmaid dress is finished with a crystal-embellished grosgrain ribbon waistband. </span><br>
+            <ol>
+                <li>Polyester</li>
+                <li>Back zipper; fully lined</li>
+                <li>Dry clean</li>
+                <li>Imported</li>
+            </ol>
+        </div>
+        <ol class="content content2">
+            <span>Helpful Info:</span>
+            <li><a href="">Shipping & Timing</a></li>
+            <li><a href="">Returns & Exchanges</a></li>
+            <li><a href="">Silhouette Guide</a></li>
+            <li><a href="">Wedding Gown Facts</a></li>
+        </ol>
+    </div>
+    <script>
+        var info=document.getElementById("info");
+        var myEvents=info.firstElementChild;
+        myEvents.children[0].onclick=function(){
+            info.children[1].style.visibility="visible";
+            info.children[2].style.visibility="hidden";
+            myEvents.children[0].className="mouseClick";
+            myEvents.children[1].className="";
+        }
+        myEvents.children[1].onclick=function(){
+            info.children[2].style.visibility="visible";
+            info.children[1].style.visibility="hidden";
+            myEvents.children[1].className="mouseClick";
+            myEvents.children[0].className="";
+        }
+    </script>
+    <div id="reviews">
+        <p>Reviews</p>
+        <div class="ratings">
+            <p class="myFont2">OVERALL RATING</p>
+            <div>
+                <img src="../img/ratings/star.png" alt="">
+                <img src="../img/ratings/star.png" alt="">
+                <img src="../img/ratings/star.png" alt="">
+                <img src="../img/ratings/star.png" alt="">
+                <img src="../img/ratings/star.png" alt="">
+            </div>
+            <div class="scores">4.8 out of 5</div>
+            <div class="down">
+                <div>
+                    <div>
+                        <p>RATING SNAPSHOT</p>
+                        <p class="myFont3">(5 reviews)</p>
+                    </div>
+                    <div id="ratingImgs">
+                        <ul>
+                            <li>
+                                <span>5 stars</span>
+                                <span></span>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <span>4 stars</span>
+                                <span></span>
+                                <span>1</span>
+                            </li>
+                            <li>
+                                <span>3 stars</span>
+                                <span></span>
+                                <span></span>
+                            </li>
+                            <li>
+                                <span>2 stars</span>
+                                <span></span>
+                                <span></span>
+                            </li>
+                            <li>
+                                <span>1 star</span>
+                                <span></span>
+                                <span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviewDetails">
+            <img src="../img/reviews/20181015113538.png" alt="">
+            <div class="F1">
+                <div>
+                    <a href="#">REVIEW THIS PRODUCT</a>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <select name="" id="">
+                                <option value="" selected>Star Rating</option>
+                                <option value="">
+                                    <input type="checkbox"> 1 Star
+                                </option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--footer-->
+<iframe src="footer.html" frameborder="0" class="my_footer"></iframe>
+</body>
+</html>
