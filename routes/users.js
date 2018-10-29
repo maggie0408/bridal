@@ -16,7 +16,7 @@ router.post("/signin", (req, res) => {
                 var user = result[0];
                 req.session["uid"] = user["uid"];
                 res.write(JSON.stringify({
-                    ok: 1
+                    ok: 1                    
                 }))
             } else {
                 res.write(JSON.stringify({
@@ -86,7 +86,7 @@ router.get("/issignin", (req, res) => {
             var user = result[0];
             res.write(JSON.stringify({
                 ok: 1, 
-                uname: user.name
+                uname: user.uname
             }))
             res.end();//异步处理，分别返回end，和上面的if对应
         })
