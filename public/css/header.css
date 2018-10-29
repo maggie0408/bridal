@@ -1,0 +1,226 @@
+header{
+    margin:0 auto;
+    position:relative;
+    border-bottom:1px solid #353535;
+}
+header>div:first-child{
+    margin:0 auto;padding:0;
+    border:0;
+}
+.hide{
+    display:none;
+}
+.active{
+    display:block;
+    overflow:hidden;
+}
+#floor1>div.left>div{
+    float:left;
+    margin-top:0.5%;
+    margin-left:0.5%;
+    border-right:1px solid gray;
+    padding-right:0.5%;
+}
+#floor1>div.left>div:last-child{
+    margin-right:0;
+    border-right:0;
+}
+#floor1>div.left>div>a{
+    font-weight:bold;
+}
+#floor1>div.left>div>a:hover{
+    color:#353535;
+}
+#rightFixed>div{
+    float:left;
+    box-sizing:border-box;
+    border-right:0.05rem solid #9C9B9F;
+    margin:0;
+    padding:6px 4px;
+    background:#727278;
+}
+#rightFixed>div:hover{
+    background:#4D4D4D;
+}
+#rightFixed>div>a{
+    color:white;
+    font-weight:bold;
+}
+#rightFixed>div:nth-child(4){
+    padding:3px 3px;
+}
+#rightFixed>div:nth-child(2)>a>img{
+    width:84%;
+}
+#rightFixed>div:last-child{
+    position:relative;
+}
+#rightFixed>div:last-child>input{
+    width:100%;
+    padding:1px 2px;
+}
+#rightFixed>div:last-child>input:focus{
+    outline:0;
+}
+#rightFixed>div:last-child>a{
+    display:inline-block;
+    position:absolute;
+    top:10%;
+    right:5%;
+}
+div.right>div{
+    float:right;
+    border-right:1px solid gray;
+}
+div.right>div>a:hover{
+    color:#353535;
+}
+div.right>div:first-child{
+    border-right:0;
+    padding-left:0.5%;
+}
+div.right>div:last-child{
+    padding-right:0.5%;
+}
+#logo{
+    margin:0 auto;
+    text-align:center;
+    margin-top:1% !important;
+}
+#logo>a>img{
+    width:20%;
+}
+nav{
+    margin-top:1%;margin-bottom:-1px;
+    padding:0;
+    display:flex;
+    position:relative;
+}
+nav>div{
+    margin:0 auto;
+    width:100%;
+    border-bottom:1px solid #353535;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-around;
+}
+nav>div>div{
+    float:left;
+    margin-bottom:-1px;
+    margin-right:0;
+    padding-top:0.5%;
+    padding-bottom:0.5%;
+    flex-grow:1;
+    flex-shrink:1;
+    text-align:center;
+    border-top:2px solid transparent;
+    border-right:1px solid transparent;
+    border-bottom:1px solid transparent;
+    border-left:1px solid transparent;
+}
+nav>div>div:hover{
+    border-top:2px solid #F3665C;
+    border-right:1px solid #74736D;
+    border-bottom:1px solid white;
+    border-left:1px solid #74736D;
+    cursor:pointer;
+}
+nav>div>div>a{
+    color:#353535;
+    font-weight:bold;
+}
+nav>div>div:nth-child(8)>a{
+    color:#AA170D;
+}
+nav>div>div>a:hover{
+    color:#74736D;
+}
+#expanding{
+    z-index:10;
+    background:white;
+}
+#expanding>li{
+    position:absolute;top:100%;left:0;
+    border:1px solid #C1C1C1;
+    border-top:0 !important;
+    background:white;
+    z-index:10;
+}
+#expanding>li:nth-child(5){
+    left:10%;
+}
+#expanding>li:nth-child(6){
+    left:40%;
+}
+#expanding>li:nth-child(7){
+    left:40%;
+}
+#expanding>li:nth-child(8){
+    left:10%;
+}
+#expanding li>div{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+#expanding li>div>dl{
+    border-right:1px solid #c1c1c1;
+    padding-left:1%;padding-right:1%;
+    margin-bottom:1%;margin-top:1%;
+    width:20%;
+}
+#expanding>li:nth-child(7)>div dl dt img{
+    width:100%;
+}
+#expanding li>div>dl:last-child{
+    border-right:0;
+}
+#expanding li>div>dl:last-child>dd{
+    color:black;
+    font-weight:bold;
+    padding-top:5%;
+}
+#expanding li>div>dl>dt>span{
+    display:inline-block;
+    padding-top:1%;padding-bottom:5%;
+    color:#c1c1c1;
+    font-size:1.5rem;
+    font-family:"STLiti";
+}
+#expanding li>div>dl a{
+    color:#3d3d3d;
+}
+#expanding li>div>dl>dd{
+    margin-bottom:3%;
+}
+#expanding li>div>dl a:hover{
+    color:#c1c1c1;
+}
+#expanding li>div>dl img{
+    width:100%;
+}
+
+@media screen and (min-width:1440px){
+    header>div:first-child{
+        width:1440px;
+    }
+    #rightFixed{
+        position:fixed;
+        top:0;
+        right:12.2%;
+        z-index:10;
+    }
+    div.right{
+        margin-right:0.5%;
+        margin-top:0.5%;
+    }
+}
+@media screen and (min-width:768px)and (max-width:1439px){
+    #rightFixed{
+        margin-left:0.5%;
+    }
+    div.right{
+        margin-right:0.5%;
+        margin-top:-7%;
+    }
+}

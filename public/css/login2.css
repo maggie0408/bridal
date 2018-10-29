@@ -1,0 +1,54 @@
+table{
+    width:40%;
+    margin:3% auto;
+}
+table tr td a{
+    text-decoration:underline;
+}
+table tr td a:hover{
+    color:#74736d;
+}
+table tr .insertInfo input{
+    width:100%;
+}
+table tr .insertInfo input:focus{
+    outline:1px solid black;
+}
+table tr .myBtn{
+    width:65%;
+    text-align:right;
+}
+table tr .myBtn input{
+    width:50%;
+    margin:10% auto;
+    background:#666666;
+    color:white;
+    padding-top:1%;
+    padding-bottom:1%;
+}
+table tr .myBtn input:hover{
+    background:white;
+    color:#666666;
+}
+table tr .pwd{
+    width:35%;
+    text-align:right;
+    vertical-align:middle;
+}
+.myFont2{
+    font-size:0.8rem;
+    color:#74736d;
+}
+@media screen and (min-width:1024px) and (max-width:1439px){
+    section{
+        width:100%;
+    }
+}
+@media screen and (min-width:1440px){
+    section{
+        width:1440px;
+    }
+    .mainBlock{
+        width:100%;
+    }
+}

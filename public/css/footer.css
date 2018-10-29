@@ -1,0 +1,69 @@
+footer{
+    width:100%;
+    margin:0 auto;
+}
+#social{
+    width:50%;
+    text-align:center;
+}
+#social>h3{
+    margin-top:5%;margin-bottom:1%;
+    padding-bottom:1%;
+    border-bottom:1px solid #E0E0E7;
+    font:normal bold "微软雅黑";
+    color:rgb(102,102,102);
+}
+#social>div:last-child{
+    width:40%;
+    display:flex;
+}
+#grayBlock{
+    width:100%;
+    margin-top:2%;
+    background-color:#747470;
+}
+#grayBlock>div:first-child{
+    width:88%;
+    display:flex;
+    justify-content: space-between;
+}
+#grayBlock div.lists{
+    margin-top:2%;margin-bottom:2%;
+}
+#grayBlock div.lists+div{
+    margin-top:2%;margin-bottom:2%;
+}
+#grayBlock div.lists dl,#grayBlock div.lists dl a{
+    color:white;
+}
+#grayBlock div.lists dl dd span{
+    text-decoration:underline;
+}
+#grayBlock>div>div.outer{
+    width:14%;
+    background-color:white;
+    outline:2px solid #919196;
+    padding:0.5%;
+}
+#grayBlock>div>div.outer>h5{
+    margin-top:5%;
+    color:#F5685C;
+}
+#grayBlock>div>div.outer>p{
+    margin-top:10%;
+    color:#74736d;
+}
+#grayBlock>div>div.outer>h6{
+    margin-top:20%;
+}
+#grayBlock>div>div.outer>h6 a{
+    color:black;
+}
+#grayBlock>div>div.outer>h6:hover{
+    text-decoration:underline;
+}
+@media screen and (min-width:1440px){
+    #grayBlock>div:first-child{
+        width:1267px;
+    }
+}
