@@ -22,6 +22,9 @@ section div.detailsTop a:hover{
 section div.productInfo{
     margin-top:2%;
 }
+section div.productInfo>div:first-child,section div.productInfo>div:last-child{
+    width:100%;
+}
 div.productInfo div.pics div ul li{
     margin-bottom:20%;
 }
