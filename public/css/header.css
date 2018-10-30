@@ -68,18 +68,18 @@ header>div:first-child{
     top:10%;
     right:5%;
 }
-div.right>div{
+div.headerRight>div{
     float:right;
     border-right:1px solid gray;
 }
-div.right>div>a:hover{
+div.headerRight>div>a:hover{
     color:#353535;
 }
-div.right>div:first-child{
+div.headerRight>div:first-child{
     border-right:0;
     padding-left:0.5%;
 }
-div.right>div:last-child{
+div.headerRight>div:last-child{
     padding-right:0.5%;
 }
 #logo{

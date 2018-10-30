@@ -1,0 +1,197 @@
+section>div:first-child{
+    margin-top:1%;
+}
+section>div:first-child a{
+    font-size:0.9rem;
+    color:#333333;
+    font-weight:bold;
+}
+section>div:first-child a:hover{
+    color:#666666;
+    text-decoration:none;
+}
+div.mainBlocks{
+    margin-top:1%;
+}
+div.mainBlocks>div.left{
+    margin:2% 0;
+}
+
+div.left h3{
+    border-bottom:5px solid #333333;
+    padding-bottom:5%;
+    margin-bottom:10%;
+}
+div.left .price,.color,.size,.length,.strapsSleeves,.silhouette,.occasion{
+    border-bottom: 1px solid #333333;
+    padding-bottom: 5%;
+    margin-bottom: 10%;
+}
+#colorGroup{
+    padding-top:3%;
+}
+#colorGroup>div{
+    width:30px;
+    height:30px;
+    margin-right:6%;
+    margin-bottom:3%;
+    border:2px solid gray;
+    float:left;
+}
+#colorGroup>div:hover{
+    border:2px solid black;
+    cursor:pointer;
+}
+#colorGroup .ivory{
+    background:ivory;
+}
+#colorGroup .blue{
+    background:blue;
+}
+#colorGroup .pink{
+    background:pink;
+}
+#colorGroup .white{
+    background:white;
+}
+#colorGroup .black{
+    background:black;
+}
+#colorGroup .purple{
+    background:purple;
+}
+#colorGroup .green{
+    background:green;
+}
+#colorGroup .grey{
+    background:grey;
+}
+#colorGroup .red{
+    background:red;
+}
+#colorGroup .brown{
+    background:brown;
+}
+#colorGroup .orange{
+    background:orange;
+}
+#colorGroup .yellow{
+    background:yellow;
+}
+div.sizeName>div{
+    float:left;
+    width:40px;
+    height:40px;
+    margin:3% 5% 3% 0;
+    text-align:center;
+    padding-top:3%;
+    background:#f8f6f0;
+    font-size:8%;
+    color:#333333;
+    border:2px solid gray;
+}
+div.sizeName>div:hover{
+    background:#74736d;
+    color:white;
+    text-decoration:none;
+    border:2px solid black;
+    cursor:pointer;
+}
+.left .img a img{
+    margin-bottom:10%;
+}
+.myInput{
+    width:15px;
+    height:15px;
+}
+.myInputA{
+    color:#74736d;
+    font-size:0.8rem;
+}
+.pagesFont{
+    color:#74736d;
+    font-size:1rem;
+}
+.myTitle{
+    display:inline-block;
+    text-align:center;
+    margin-top:5%;
+    color:#333333;
+    font-size:0.8rem;
+    font-weight:bold;
+}
+.price{
+    color:#AA170D !important;
+    width:100%;
+    margin-top:3% !important;
+}
+.myTitle:hover{
+    text-decoration:none;
+    color:#6D6C66;
+}
+.more{
+    font-size:0.9rem;
+    color:#74736d;
+    text-decoration:underline;
+}
+.left ul li{
+    margin-left:5%;
+    margin-bottom:3%;
+    list-style-type:disc;
+}
+section div.right{
+    margin:0;
+}
+section div.right h1{
+    margin-top:-3%;
+}
+section div.right>div:nth-child(2){
+    margin:1% 0 1% 0;    
+    width:98.5%;   
+}
+section div.right>div:nth-child(2)>p{
+    float:left;
+    border-right:1px solid gray;
+    padding-right:2%;
+    margin-right:2%;
+}
+section div.right>div:nth-child(2)>div{
+    float:right;
+}
+section div.right .displays .product .choices{
+    width:100%;
+    margin:0 auto !important;
+}
+section div.right .displays .product .choices:after{
+    display:block;
+    clear:both;
+    content:"";
+}
+section div.right .displays .product .choices div{
+    float:left;
+}
+#pages{
+    width:100%;
+}
+#pages>div{
+    margin-top:4%;
+    text-align:center;
+}
+#pages div a{
+    padding-right:1%;
+    text-decoration:underline;
+}
+@media screen and (min-width:1024px) and (max-width:1439px){
+    section{
+        width:100%;
+    }
+}
+@media screen and (min-width:1440px){
+    section{
+        width:1440px;
+    }
+    section .top{
+        width:100%;
+        margin:2% auto;
+    }
+}

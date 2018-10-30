@@ -7,6 +7,10 @@ section .top a:hover{
     color:#666666;
     text-decoration:none;
 }
+section>div.mainBlocks>div.left{
+    width:30%;margin:0;
+}
+
 .left h3{
     border-bottom:5px solid #333333;
     padding-bottom:5%;
@@ -139,6 +143,9 @@ section:after{
     content:"";
     clear:both;
 }
+section div.right{
+    margin:0;
+}
 section div.right h1{
     margin-top:-3%;
 }
@@ -188,19 +195,6 @@ section div.right .displays .product .choices div{
 @media screen and (min-width:1024px) and (max-width:1439px){
     section{
         width:100%;
-    }
-    #my_nav{
-        width:100%;
-    }
-    #right{
-        top:0;
-        right:10%;
-    }
-    section .left{
-        width:20%;
-    }
-    section .right{
-        width:70%;
     }
 }
 @media screen and (min-width:1440px){

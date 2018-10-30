@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/products2.css">
+    <meta name= "viewport" content="width=device-width，initial-scale=1.0">
+    <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel= "styleSheet" href= "css/bootstrap.css">
     <script src="js/jquery.min.js"></script>
@@ -12,91 +13,151 @@
 </head>
 <body>
     <header id="header"></header>
-    <section>
+    <section class="clearBoth">
         <!--导航下方内容-->
-        <div class="top">
+        <div>
             <a href="#">HOME</a><span>&nbsp;>&nbsp;</span><a href="#">SALE</a><span>&nbsp;>&nbsp;</span>
         </div>
         <div class="mainBlocks row flex-md-row">
           <div class="left col col-md-3">
             <h3>Filter by</h3>
-            <div class="leftName price"><h6>PRICE</h6></div>
-            <div class="leftName color">
+            <div class="price"><h6>PRICE</h6></div>
+            <div class="color">
                 <h6>COLOR</h6>
-                <div id="colorGroup">
-                    <a href="#"><div class="colorName ivory"></div></a>
-                    <a href="#"><div class="colorName blue"></div></a>
-                    <a href="#"><div class="colorName pink"></div></a>
-                    <a href="#"><div class="colorName white"></div></a>
-                    <a href="#"><div class="colorName black"></div></a>
-                    <a href="#"><div class="colorName purple"></div></a>
-                    <a href="#"><div class="colorName green"></div></a>
-                    <a href="#"><div class="colorName grey"></div></a>
-                    <a href="#"><div class="colorName red"></div></a>
-                    <a href="#"><div class="colorName brown"></div></a>
-                    <a href="#"><div class="colorName orange"></div></a>
-                    <a href="#"><div class="colorName yellow"></div></a>
+                <div id="colorGroup" class="clearBoth">
+                    <div class="ivory"></div>
+                    <div class="blue"></div>
+                    <div class="pink"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="purple"></div>
+                    <div class="green"></div>
+                    <div class="grey"></div>
+                    <div class="red"></div>
+                    <div class="brown"></div>
+                    <div class="orange"></div>
+                    <div class="yellow"></div>
                 </div>
             </div>
-            <div class="leftName size">
+            <div class="size">
                 <h6>SIZE</h6>
-                <div class="sizeName">
-                    <a href="#" class="sizeItem"><div>0</div></a>
-                    <a href="#" class="sizeItem"><div>2</div></a>
-                    <a href="#" class="sizeItem"><div>4</div></a>
-                    <a href="#" class="sizeItem"><div>6</div></a>
-                    <a href="#" class="sizeItem"><div>8</div></a>
-                    <a href="#" class="sizeItem"><div>10</div></a>
-                    <a href="#" class="sizeItem"><div>12</div></a>
-                    <a href="#" class="sizeItem"><div>XS</div></a>
-                    <a href="#" class="sizeItem"><div>S</div></a>
-                    <a href="#" class="sizeItem"><div>M</div></a>
-                    <a href="#" class="sizeItem"><div>L</div></a>
-                    <a href="#" class="sizeItem"><div>XL</div></a>
-                    <a href="#" class="sizeItem"><div>0X</div></a>
-                    <a href="#" class="sizeItem"><div>14</div></a>
-                    <a href="#" class="sizeItem"><div>16</div></a>
-                    <a href="#" class="sizeItem"><div>18</div></a>
-                    <a href="#" class="sizeItem"><div>20</div></a>
-                    <a href="#" class="sizeItem"><div>22</div></a>
-                    <a href="#" class="sizeItem"><div>24</div></a>
-                    <a href="#" class="sizeItem"><div>26</div></a>
-                    <a href="#" class="sizeItem"><div>28</div></a>
-                    <a href="#" class="sizeItem"><div>30</div></a>
+                <div class="sizeName clearBoth">
+                    <div>0</div>
+                    <div>2</div>
+                    <div>4</div>
+                    <div>6</div>
+                    <div>8</div>
+                    <div>10</div>
+                    <div>12</div>
+                    <div>XS</div>
+                    <div>S</div>
+                    <div>M</div>
+                    <div>L</div>
+                    <div>XL</div>
+                    <div>0X</div>
+                    <div>14</div>
+                    <div>16</div>
+                    <div>18</div>
+                    <div>20</div>
+                    <div>22</div>
+                    <div>24</div>
+                    <div>26</div>
+                    <div>28</div>
+                    <div>30</div>
                 </div>
             </div>
-            <div class="leftName length">
+            <div class="length">
                 <h6>LENGTH</h6>
-                <div><input type="checkbox" class="myInput"><a class="myInputA" href="#"> Long(587)</a></div>
-                <div><input type="checkbox" class="myInput"><a class="myInputA" href="#"> Short(245)</a></div>
-                <div><input type="checkbox" class="myInput"><a class="myInputA" href="#"> High Low(13)</a></div>
-                <div><input type="checkbox" class="myInput"><a class="myInputA" href="#"> Tea Length(11)</a></div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a class="myInputA" href="#"> Long(587)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a class="myInputA" href="#"> Short(245)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a class="myInputA" href="#"> High Low(13)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a class="myInputA" href="#"> Tea Length(11)</a>
+                </div>
             </div>
-            <div class="leftName strapsSleeves">
+            <div class="strapsSleeves">
                 <h6>STRAPS SLEEVES</h6>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> Strapless(245)</a></div>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> Tank(173)</a></div>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> Cap Sleeves(97)</a></div>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> Halter(83)</a></div>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> Spaghetti Strap(79)</a></div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> Strapless(245)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> Tank(173)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> Cap Sleeves(97)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> Halter(83)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> Spaghetti Strap(79)</a>
+                </div>
                 <a href="#" class="more">More...</a>
             </div>
-            <div class="leftName silhouette">
+            <div class="silhouette">
                 <h6>SILHOUETTE</h6>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> Sheath(322)</a></div>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> A-Line(223)</a></div>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> Ballgown(165)</a></div>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> Mermaid/Trumpet(126)</a></div>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> Jumpsuit(18)</a></div>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> Separates(6)</a></div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> Sheath(322)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> A-Line(223)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> Ballgown(165)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> Mermaid/Trumpet(126)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> Jumpsuit(18)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> Separates(6)</a>
+                </div>
             </div>
-            <div class="leftName occasion">
+            <div class="occasion">
                 <h6>OCCASION</h6>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> Guest of Wedding(240)</a></div>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> Mother and Special Guest(184)</a></div>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> Formal Dresses(167)</a></div>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> Cocktail and Party(96)</a></div>
-                <div><input type="checkbox" class="myInput"><a href="#" class="myInputA"> Prom(88)</a></div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> Guest of Wedding(240)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> Mother and Special Guest(184)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> Formal Dresses(167)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> Cocktail and Party(96)</a>
+                </div>
+                <div>
+                    <input type="checkbox" class="myInput">
+                    <a href="#" class="myInputA"> Prom(88)</a>
+                </div>
                 <a href="#" class="more">More...</a>
             </div>
             <div class="img">
@@ -126,26 +187,26 @@
           </div>
           <div class="right col col-md-9">
               <h1>All Sale Dresses</h1>
-              <div class="nameBlock">
-                  <div class="myInputA">1-30 of 120</div>
-                  <div>Sort By
-                      <select name="" id="">
-                          <option value="" selected>Recommended</option>
-                          <option value="">Newest</option>
-                          <option value="">Price High to Low</option>
-                          <option value="">Price Low to High</option>
-                      </select>
-                  </div>
-                  <p>
-                      <b>Select</b>
-                      <select name="" id="" size="">
-                          <option value="">Page 1</option>
-                          <option value="">Page 2</option>
-                          <option value="">Page 3</option>
-                          <option value="">Page 4</option>
-                      </select>
-                      <span class="myInputA">of 4</span>
-                  </p>
+              <div class="clearBoth">
+                <p class="myInputA">1-30 of 120</p>
+                <p>Sort By
+                    <select name="" id="">
+                        <option value="" selected>Recommended</option>
+                        <option value="">Newest</option>
+                        <option value="">Price High to Low</option>
+                        <option value="">Price Low to High</option>
+                    </select>
+                </p>
+                <div>
+                    <b>Select</b>
+                    <select name="" id="" size="">
+                        <option value="">Page 1</option>
+                        <option value="">Page 2</option>
+                        <option value="">Page 3</option>
+                        <option value="">Page 4</option>
+                    </select>
+                    <span class="myInputA">of 4</span>
+                </div>
               </div>
               <div class="row displays floor1">
                   <div class="col col-md-4 product">
