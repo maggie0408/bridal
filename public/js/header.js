@@ -18,8 +18,56 @@ $(function(){
                 $("#expanding>li").eq(i).removeClass("active");
             })
 
-            //搜索
+            new Vue({
+                el:"#header",
+                data:{
+                    kwords:"",
+                    issignin:false,
+                    uname:""
+                },
+                mounted(){
+                    if(location.search.indexOf("kwords")!=-1){
+                        this.kwords=decodeURI(location.search.split("=")[1])
+                    }
+                    $.ajax({
+                        url:"http://localhost:8000/users/issignin",
+                        type:"get",
+                        dataType:"json",
+                        success:(res)=>{
+                            if(res.ok==0) this.issignin=false
+                            else{
+                                this.issignin=true;
+                                this.uname=res.uname;
+                            }
+                        }
+                    })
+                },
+                computed:{
+                    signin(){
+                        return `signin.html?back=${location.href}`;
+                    }
+                },
+                methods:{
+                    search(){
+                        if(this.kwords!=""){
+                            location.href=`products.html?kwords=${this.kwords}`;
+                        }
+                    },
+                    signout(){
+                        $.ajax({
+                            url:"http://localhost:8000/users/signout",
+                            type: "get",
+                            success: ()=>{
+                                alert("您的账号已退出");
+                                this.issignin=false;
+                            }
+                        })
+                    }
+                }
+            })
+
             /*
+            //搜索        
             var $btnSearch=$("#rightFixed>div:last-child>a img"),
                 $input=$btnSearch.parent().prev();
             $btnSearch.click(function(){
@@ -35,7 +83,7 @@ $(function(){
                 var kwords=decodeURI(location.search.split("=")[1]);
                 $input.val(kwords);
             }
-            */
+            
 
             //登录跳转
             $("#btnSignin").click(function(){
@@ -73,8 +121,7 @@ $(function(){
                     }
                 })
             })
+            */
         }
     })
-
-    
 });

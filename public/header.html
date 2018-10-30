@@ -34,7 +34,7 @@
                 <a href="">Find a Store</a>
             </div>
             <div>
-                <input type="text" placeholder="Search">
+                <input type="text" placeholder="Search" v-model="kwords">
                 <a href="#" class="searchBtn"><img src="img/index/header/search.png" alt=""></a>
             </div>
         </div>
@@ -53,7 +53,7 @@
             </div>
             <div>
                 <a href="#" class="basicGray">Welcome
-                    <span id="uname">${"uname"}</span>
+                    <span id="uname">{{uname}}</span>
                 </a>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 <div><a href="#">GIFTS & DECORATIONS</a></div>
                 <div><a href="#">SHOES</a></div>
                 <div><a href="#">PROM</a></div>
-                <div><a href="#">SALE</a></div>
+                <div><a href="products.html">SALE</a></div>
                 <div><a href="#">THE BLOG</a></div>
             </div>
             <!--下拉菜单-->
