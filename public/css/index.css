@@ -26,78 +26,83 @@
 }
 #mainPics>div:nth-child(2){
     position:absolute;
+    width:25%;
     bottom:15%;
     right:10%;
     background:white;
+    opacity:.9;
     text-align:center;
 }
-#mainPics>div:nth-child(2)>div.content{
-    width:80%;
+section>#mainPics>div:nth-child(2)>div.content{
+    width:85%;
     margin-top:10%;
     margin-bottom:10%;
 }
-#mainPics>div:nth-child(2)>div.content>div.floor>p{
+section>#mainPics>div:nth-child(2)>div.content>div.floor>p{
     color:#5A5A5A;
-    font-size:1.1rem;
+    font-size:1.1%;
 }
 
-#mainPics>div:nth-child(2)>div.content>div.floor>div{
-    width:80%;
+section>#mainPics>div:nth-child(2)>div.content>div.floor>div{
+    width:85%;
     margin-bottom:5%;
-    padding:5%;
+    text-align:center;
+    line-height:200%;
 }
-#mainPics>div:nth-child(2)>div.content>div.floor>div a{
+section>#mainPics>div:nth-child(2)>div.content>div.floor>div a{
     color:#404040;
     font-weight:bold;
+    font-size:1.5%;
 }
-#mainPics>div:nth-child(2)>div.content>div.floor>div a:hover{
+section>#mainPics>div:nth-child(2)>div.content>div.floor>div a:hover{
     text-decoration:none;
 }
-#mainPics>div:nth-child(2)>div.content>div:last-child a{
+section>#mainPics>div:nth-child(2)>div.content>div:last-child a{
     color:black;
     font-weight:bold;
 }
-#mainPics>div:nth-child(2)>div.content>div:last-child a:hover{
+section>#mainPics>div:nth-child(2)>div.content>div:last-child a:hover{
     text-decoration:none;
     color:#74736d;
 }
-#welcome{
+section>#welcome{
     width:100%;height:160px;
     margin-top:3%;
     text-align:center;
     background-color:#F1CFC3;
     position:relative;
-}#welcome>div{
+}
+section>#welcome>div{
      position:absolute;
  }
-#welcome>div:first-child{
+section>#welcome>div:first-child{
     left:15%;top:30%;
 }
-#welcome>div:nth-child(2){
+section>#welcome>div:nth-child(2){
     left:32%;top:30%;
 }
-#welcome>div:nth-child(2)>p{
+section>#welcome>div:nth-child(2)>p{
     margin-top:3%;
     font-size:1.2rem;
 }
-#welcome>div:nth-child(2)>p a{
+section>#welcome>div:nth-child(2)>p a{
     color:black;
     text-decoration:underline;
 }
-#welcome>div:nth-child(2)>p a:hover{
+section>#welcome>div:nth-child(2)>p a:hover{
     text-decoration:underline !important;
     color:#74736d;
 }
-#welcome>div:last-child{
+section>#welcome>div:last-child{
     right:13%;top:35%;
     background-color:white;
     padding:0.7% 1.5%;
 }
-#welcome>div:last-child>a{
+section>#welcome>div:last-child>a{
     color:black;
     font-weight:bold;
 }
-#shopNow{
+section>#shopNow{
     width:88%;height:70px;
     margin:0 auto;
     margin-top:2% !important;

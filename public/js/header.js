@@ -17,7 +17,7 @@ $(function(){
                 var i=$name.prevAll().length;
                 $("#expanding>li").eq(i).removeClass("active");
             })
-
+            /*
             new Vue({
                 el:"#header",
                 data:{
@@ -65,8 +65,8 @@ $(function(){
                     }
                 }
             })
-
-            /*
+            */
+            
             //搜索        
             var $btnSearch=$("#rightFixed>div:last-child>a img"),
                 $input=$btnSearch.parent().prev();
@@ -121,7 +121,7 @@ $(function(){
                     }
                 })
             })
-            */
+            
         }
     })
 });

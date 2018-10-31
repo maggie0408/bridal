@@ -1,4 +1,5 @@
 header{
+    width:100%;
     margin:0 auto;
     position:relative;
     border-bottom:1px solid #353535;
@@ -210,7 +211,7 @@ nav>div>div>a:hover{
         right:12.2%;
         z-index:10;
     }
-    div.right{
+    div.headerRight{
         margin-right:0.5%;
         margin-top:0.5%;
     }
@@ -219,7 +220,7 @@ nav>div>div>a:hover{
     #rightFixed{
         margin-left:0.5%;
     }
-    div.right{
+    div.headerRight{
         margin-right:0.5%;
         margin-top:-7%;
     }
