@@ -15,6 +15,9 @@ header>div:first-child{
     display:block;
     overflow:hidden;
 }
+#floor1>div{
+    margin-left:0;
+}
 #floor1>div.left>div{
     float:left;
     margin-top:0.5%;

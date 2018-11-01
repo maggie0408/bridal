@@ -23,9 +23,10 @@ $(function(){
         },3000);        
     };
     $("#box>ol>li").each(function(index){
-        $(this).click(function(){
+        $(this).mouseover(function(){
             num=index;
-            $(this).eq(num).addClass("current").siblings().removeClass("current");
+            console.log(this);
+            $(this).addClass("current").siblings().removeClass("current");
             $("#box>ul").stop().animate({"marginLeft":-100*num+"%"},580);
         })
     })
