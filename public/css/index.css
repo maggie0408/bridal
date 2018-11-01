@@ -21,10 +21,44 @@
     width:100%;
     position:relative;
 }
-#mainPics>a>img{
+#box{
     width:100%;
+    overflow: hidden;
+    position:relative;
 }
-#mainPics>div:nth-child(2){
+#box ul{
+    list-style:none;
+    width:500%;
+}
+#box ol{
+    position:absolute;
+    bottom:3%;
+    left:45%;
+    width:20%;
+}
+#box ol li{
+    float:left;
+    margin-left:10%;
+    width:13px;height:13px;
+    background:#F1CFC3;
+    border-radius:50%;
+    cursor:pointer;
+}
+#box ol li.current{
+    background:#F60756;
+}
+#box ul li{
+    float:left;
+    width:20%;
+}
+#box ul li img{
+    width:100%;
+    margin-right:-4px;
+}
+#box>img:last-child{
+    margin-right:0;
+}
+#mainPics>div:last-child{
     position:absolute;
     width:25%;
     bottom:15%;

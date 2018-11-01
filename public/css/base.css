@@ -38,6 +38,12 @@ a:hover{
 .basicGray{
     color:#74736D;
 }
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
 @media screen and (min-width:1440px){
     body{
         width:100%;
