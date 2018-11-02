@@ -31,6 +31,42 @@ div.productsLeft .price,.color,.size,.length,.strapsSleeves,.silhouette,.occasio
     padding-bottom: 5%;
     margin-bottom: 10%;
 }
+div.productsLeft div.price>div:last-child{
+    position:relative;
+    margin-top:15%;
+    width:100%;
+    height:8px;
+    background-color:#F3665C;
+}
+div.productsLeft div.price>div:last-child>div:first-child{
+    position:absolute;
+    left:-1px;top:-4px;
+    width:15px;height:15px;
+    border-radius:50%;
+    background:white;
+    border:1px solid #F3665C;
+    cursor:pointer;
+}
+div.productsLeft div.price>div:last-child>div:last-child{
+    position:absolute;
+    right:-1px;top:-4px;
+    width:15px;height:15px;
+    border-radius:50%;
+    background:white;
+    border:1px solid #F3665C;
+    cursor:pointer;
+}
+div.productsLeft div.price>div:last-child>div:first-child span{
+    position:absolute;
+    top:-200%;left:-10%;
+    color:#5D5F64;
+    
+}
+div.productsLeft div.price>div:last-child>div:last-child span{
+    position:absolute;
+    top:-200%;right:-15%;
+    color:#5D5F64;
+}
 #colorGroup{
     padding-top:3%;
 }
@@ -108,6 +144,10 @@ div.sizeName>div:hover{
     width:15px;
     height:15px;
 }
+.myTitle:hover{
+    text-decoration:none;
+    color:#6D6C66;
+}
 .myInputA{
     color:#74736d;
     font-size:0.8rem;
@@ -124,14 +164,9 @@ div.sizeName>div:hover{
     font-size:0.8rem;
     font-weight:bold;
 }
-.price{
-    color:#AA170D !important;
+.price{     
     width:100%;
     margin-top:3% !important;
-}
-.myTitle:hover{
-    text-decoration:none;
-    color:#6D6C66;
 }
 .more{
     font-size:0.9rem;
