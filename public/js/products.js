@@ -20,7 +20,6 @@ $(function(){
     // boundary of dragger bar size
     var boundaryBar={
         max:$ctl.getBoundingClientRect().width,
-        size:"",
         min:0,
         Fixed_left:$ctl.getBoundingClientRect().left,
         Fixed_right:$ctl.getBoundingClientRect().right,
@@ -29,8 +28,10 @@ $(function(){
     };
 
     var length={
-        left:"",
-        right:""
+        leftDragging:"",
+        rightDragging:"",
+        leftDragEnd:"",
+        rightDragEnd:""
     };
 
     var size=15;
@@ -38,7 +39,7 @@ $(function(){
     // price
     var price={
         max:function(){
-            return Math.floor(price.maxBar/boundaryBar.max*270)+30;
+            return Math.floor((price.maxBar/boundaryBar.max*270)+30);
         },
         min:function(){
             return Math.floor(price.minBar/boundaryBar.max*270)+30;
@@ -50,17 +51,19 @@ $(function(){
 
     // event listener
     _on($maxPrice,"drag",function(eve){
-        eve.stopPropagation();
+        eve.stopPropagation();        
         if(canMove){
             maxClientX = eve.clientX;
-            length.right = boundaryBar.Fixed_right+15;//boundaryBar.right - maxClientX + maxOffsetX - 15;
+            length.rightDragging = boundaryBar.Fixed_right - maxClientX + maxOffsetX - 15;
 
-            if (length.right > 0) {
-                price.maxBar = boundaryBar.max - length.right;
+            if (length.rightDragging >= 0) {
+                price.maxBar = boundaryBar.max - length.rightDragging;
                 if (price.maxBar - price.minBar > 30) {
-                    $maxPrice.style.right = length.right + "px";
-                    $bar.style.right = length.right + "px";
-                    $bar.style.width=boundaryBar.max-length.right+"px";
+                    $maxPrice.style.right = length.rightDragging -1 + "px";
+                    $bar.style.right = length.rightDragging -1+ "px";
+                    $bar.style.width=boundaryBar.max-length.rightDragging-length.leftDragEnd-1+"px"; 
+                    
+                    $maxPrice.firstChild.innerHTML="$"+price.max();
                 }
             }
             $maxPrice.style.top="-4px";
@@ -68,29 +71,31 @@ $(function(){
     });
 
     _on($minPrice,"drag",function(eve){
-        eve.stopPropagation();
+        eve.stopPropagation();   
         if(canMove){            
             minClientX = eve.clientX;
-            length.left = minClientX - boundaryBar.left - minOffsetX;
+            length.leftDragging = minClientX - boundaryBar.Fixed_left - minOffsetX;
 
-            if (length.left > 0) {
-                price.minBar = length.left;
-
-                if (!length.right) length.right = 0;
-                price.maxBar = boundaryBar.max - length.right;
-
+            if (length.leftDragging >= 0) {
+                price.minBar = length.leftDragging;
+                if (!length.rightDragEnd) length.rightDragEnd = 0;
                 if (price.maxBar - price.minBar > 30) {
-                    $minPrice.style.left = length.left + "px";
-                    $bar.style.left = length.left + "px";
-                    $bar.style.width=boundaryBar.max-length.left+"px";
+                    $minPrice.style.left = length.leftDragging + "px";
+                    $bar.style.left = length.leftDragging + "px";
+                    $bar.style.width=boundaryBar.max-length.leftDragging-length.rightDragEnd+"px";
+                    
+                    $minPrice.firstChild.innerHTML="$"+price.min();
                 }
             }
             $minPrice.style.top="-4px";
-        }
+        }        
     });
 
     _on($maxPrice,"dragstart",function(eve){
         eve.stopPropagation();
+        var img=new Image();
+        img.src="./img/icons/transparent.png";
+        eve.dataTransfer.setDragImage(img,"","");
         maxOffsetX=eve.offsetX;
         maxClientX=eve.clientX;
         canMove=true;
@@ -98,20 +103,35 @@ $(function(){
 
     _on($minPrice,"dragstart",function(eve){
         eve.stopPropagation();
+        var img=new Image();
+        img.src="./img/icons/transparent.png";
+        eve.dataTransfer.setDragImage(img,"","");
         minOffsetX=eve.offsetX;
+        minClientX=eve.clientX;
         canMove=true;
     })
 
 
     _on($maxPrice,"dragend",function(eve){
         maxClientX=eve.clientX;
-        length.right=boundaryBar.right-maxClientX+maxOffsetX-15;
-        eve.stopPropagation();
+        maxOffsetX=eve.offsetX;
+
+        length.rightDragging=boundaryBar.Fixed_right-maxClientX+maxOffsetX-15;
+        length.rightDragEnd=length.rightDragging;
+
+        $bar.style.width=boundaryBar.max-length.rightDragEnd-length.leftDragEnd+"px";
+        price.maxBar = boundaryBar.max - length.rightDragEnd;  
+        eve.stopPropagation();      
     })
 
     _on($minPrice,"dragend",function(eve){
         minClientX=eve.clientX;
-        length.left=maxClientX-boundaryBar.left-minOffsetX;
+        minOffsetX=eve.offsetX;
+
+        length.leftDragging=minClientX-boundaryBar.left-minOffsetX;
+        length.leftDragEnd=length.leftDragging;
+
+        $bar.style.width=boundaryBar.max-length.leftDragEnd-length.rightDragEnd+"px";
         eve.stopPropagation();
     })
 })

@@ -69,13 +69,13 @@ div.productsLeft div.price div.pOuter div.pInner{
 }
 #minPrice span{
     position:absolute;
-    top:-200%;left:-10%;
+    top:-200%;left:-12%;
     color:#5D5F64;
     
 }
 #maxPrice span{
     position:absolute;
-    top:-200%;right:-15%;
+    top:-200%;right:-12%;
     color:#5D5F64;
 }
 #colorGroup{
