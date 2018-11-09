@@ -5,16 +5,15 @@ const pool = require("../pool");
 router.post("/signin", (req, res) => {
     var uname = req.body.uname;
     var upwd = req.body.upwd;
-    console.log(uname, upwd);
     pool.query(
-        "select * from zr_user where uname=? and upwd=?",
+        "select * from users where uname=? and upwd=?",
         [uname, upwd],
         (err, result) => {
             if (err) console.log(err);
             if (result.length > 0) {
                 res.writeHead(200);
                 var user = result[0];
-                req.session["uid"] = user["uid"];
+                req.session["uid"] = user["id"];                
                 res.write(JSON.stringify({
                     ok: 1                    
                 }))
@@ -51,19 +50,14 @@ router.post("/signup", (req, res) => {
         return;
     };    
     pool.query(
-        "INSERT INTO zr_user VALUES(NULL,?,?,?,?,NULL,NULL,NULL)",
+        "INSERT INTO users VALUES(NULL,?,?,?,?,NULL,NULL,NULL)",
         [uname,upwd,email,phone],
         (err, result) => {
             if (err) console.log(err);
             if(result.affectedRows>0){
-                //res.writeHead(200);
-                //alert("注册成功！");
                 var uname=res.req.body.uname,upwd=res.req.body.upwd,email=res.req.body.email,phone=res.req.body.phone;
                 res.send({uname:uname,upwd:upwd,email:email,phone:phone});
-                //res.send({uname:uname,upwd:upwd,email:email,phone:phone});
-            }//else{
-                //alert("注册失败，请检查信息");
-            //}
+            }
         }
     )
 })
@@ -80,7 +74,7 @@ router.get("/issignin", (req, res) => {
         res.end();//处理异步的问题，结束之后就end
     } else {
         var uid = req.session.uid;
-        var sql = "select * from zr_user where uid=?";
+        var sql = "select * from users where id=?";
         pool.query(sql, [uid], (err, result) => {
             if (err) console.log(err);
             var user = result[0];

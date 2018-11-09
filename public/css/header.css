@@ -121,6 +121,8 @@ nav>div>div{
     border-right:1px solid transparent;
     border-bottom:1px solid transparent;
     border-left:1px solid transparent;
+    color:#353535;
+    font-weight:bold;
 }
 nav>div>div:hover{
     border-top:2px solid #F3665C;
@@ -128,16 +130,10 @@ nav>div>div:hover{
     border-bottom:1px solid white;
     border-left:1px solid #74736D;
     cursor:pointer;
-}
-nav>div>div>a{
-    color:#353535;
-    font-weight:bold;
+    color:#74736D;
 }
 nav>div>div:nth-child(8)>a{
     color:#AA170D;
-}
-nav>div>div>a:hover{
-    color:#74736D;
 }
 #expanding{
     z-index:10;

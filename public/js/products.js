@@ -66,7 +66,6 @@ $(function(){
                     $maxPrice.firstChild.innerHTML="$"+price.max();
                 }
             }
-            $maxPrice.style.top="-4px";
         }            
     });
 
@@ -87,7 +86,6 @@ $(function(){
                     $minPrice.firstChild.innerHTML="$"+price.min();
                 }
             }
-            $minPrice.style.top="-4px";
         }        
     });
 

@@ -1,21 +1,62 @@
 $(function(){
+    //引入head样式
     $("<link rel='stylesheet' href='../css/header.css'>").appendTo("head");    
+
+    //获取header内容
     $.ajax({
         url:"http://localhost:8000/header.html",
         type:"get",
         success:function(res){
             $("#header").replaceWith(res);
-            //导航栏移动效果
+
+            //一级菜单移出，显示/隐藏二级菜单
+            var tMove;
+
+            //导航栏样式
+            var styleOver={
+                "border-top":"2px solid #f3665c",
+                "border-right":"1px solid #74736d",
+                "border-bottom":"1px solid white",
+                "border-left":"1px solid #74736d",
+                "color":"#74736d"
+            };
+            var styleOut={
+                "border-top":"2px solid transparent",
+                "border-right": "1px solid transparent",
+                "border-bottom": "1px solid transparent",
+                "border-left": "1px solid transparent",
+                "color": "#353535"
+            };
+
+            //一级菜单移入，显示二级菜单
             $("#menus").on("mouseover","div",function(){
-                var $name=$(this);
-                var i=$name.prevAll().length;
-                //console.log(i);
-                $("#expanding>li").eq(i).addClass("active")
-            })
+                var $name=$(this);                
+                var i=$name.prevAll().length; 
+                $("#expanding>li").eq(i).addClass("active");                       
+                $(this).css(styleOver);
+            })            
+            //一级菜单移出，隐藏二级菜单
             $("#menus").on("mouseout","div",function(){
                 var $name=$(this);
+                $(this).css(styleOut);
                 var i=$name.prevAll().length;
-                $("#expanding>li").eq(i).removeClass("active");
+                
+                tMove=setTimeout(function(){
+                    $("#expanding>li").eq(i).removeClass("active");
+                },100);
+            })
+            //二级菜单显示
+            $("#expanding").on("mouseover","li",function(){
+                $(this).addClass("active");
+                var i=$(this).prevAll().length; 
+                $("#menus>div").eq(i).css(styleOver);
+            })
+            //二级菜单隐藏
+            $("#expanding").on("mouseout","li",function(){                
+                clearTimeout(tMove);
+                $(this).removeClass("active");                    
+                var i=$(this).prevAll().length; 
+                $("#menus>div").eq(i).css(styleOut);
             })
             /*
             new Vue({
@@ -89,6 +130,7 @@ $(function(){
             $("#btnSignin").click(function(){
                 location.href="signin.html?back="+location.href;
             })
+
             $.ajax({
                 url:"http://localhost:8000/users/issignin",
                 type:"get",
@@ -105,7 +147,7 @@ $(function(){
 
             //注册账号
             $("#btnSignup").click(function(){
-                location.href="signup.html?back="+location.href;
+                location.href="signup.html?backTo="+location.href;
             })
 
 
