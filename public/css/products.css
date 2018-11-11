@@ -1,242 +1,242 @@
 section{
-    margin:0 auto;
+  margin:0 auto;
 }
 section>div:first-child{
-    margin-top:1%;
+  margin-top:1%;
 }
 section>div:first-child a{
-    font-size:0.9rem;
-    color:#333333;
-    font-weight:bold;
+  font-size:0.9rem;
+  color:#333333;
+  font-weight:bold;
 }
 section>div:first-child a:hover{
-    color:#666666;
-    text-decoration:none;
+  color:#666666;
+  text-decoration:none;
 }
 div.mainBlocks{
-    margin-top:1%;
-    width:100%;
+  margin-top:1%;
+  width:100%;
 }
 div.mainBlocks>div.productsLeft{
-    margin:2% 0;
+  margin:2% 0;
 }
 
 div.productsLeft h3{
-    border-bottom:5px solid #333333;
-    padding-bottom:5%;
-    margin-bottom:10%;
+  border-bottom:5px solid #333333;
+  padding-bottom:5%;
+  margin-bottom:10%;
 }
 div.productsLeft .price,.color,.size,.length,.strapsSleeves,.silhouette,.occasion{
-    border-bottom: 1px solid #333333;
-    padding-bottom: 5%;
-    margin-bottom: 10%;
-    overflow: hidden;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 5%;
+  margin-bottom: 10%;
+  overflow: hidden;
 }
 div.productsLeft div.price div.pOuter{
-    position:relative;
-    margin-top:15%;
-    width:100%;
-    height:8px;
-    background-color:gray;
-    
+  position:relative;
+  margin-top:15%;
+  width:100%;
+  height:8px;
+  background-color:gray;
+
 }
 div.productsLeft div.price div.pOuter div.pInner{
-    width:100%;
-    position:absolute;
-    left:0;top:0;
-    height:8px;    
-    background-color:#F3665C;
-    border-radius:15px;
-    overflow: hidden;
+  width:100%;
+  position:absolute;
+  left:0;top:0;
+  height:8px;
+  background-color:#F3665C;
+  border-radius:15px;
+  overflow: hidden;
 }
 #minPrice{
-    position:absolute;
-    visibility:visible !important;
-    left:1px;top:-4px;
-    width:15px;height:15px;
-    background:white;
-    border:1px solid #F3665C;
-    cursor:pointer;
+  position:absolute;
+  visibility:visible !important;
+  left:1px;top:-4px;
+  width:15px;height:15px;
+  background:white;
+  border:1px solid #F3665C;
+  cursor:pointer;
 }
 #maxPrice{
-    position:absolute;
-    visibility:visible !important;
-    right:1px;top:-4px;
-    width:15px;height:15px;
-    background:white;
-    border:1px solid #F3665C;
-    cursor:pointer;
+  position:absolute;
+  visibility:visible !important;
+  right:1px;top:-4px;
+  width:15px;height:15px;
+  background:white;
+  border:1px solid #F3665C;
+  cursor:pointer;
 }
 #minPrice span{
-    position:absolute;
-    top:-200%;left:-12%;
-    color:#5D5F64;
-    
+  position:absolute;
+  top:-200%;left:-12%;
+  color:#5D5F64;
+
 }
 #maxPrice span{
-    position:absolute;
-    top:-200%;right:-12%;
-    color:#5D5F64;
+  position:absolute;
+  top:-200%;right:-12%;
+  color:#5D5F64;
 }
 #colorGroup{
-    padding-top:3%;
+  padding-top:3%;
 }
 #colorGroup>div{
-    width:30px;
-    height:30px;
-    margin-right:6%;
-    margin-bottom:3%;
-    border:2px solid gray;
-    float:left;
+  width:30px;
+  height:30px;
+  margin-right:6%;
+  margin-bottom:3%;
+  border:2px solid gray;
+  float:left;
 }
 #colorGroup>div:hover{
-    border:2px solid black;
-    cursor:pointer;
+  border:2px solid black;
+  cursor:pointer;
 }
 #colorGroup .ivory{
-    background:ivory;
+  background:ivory;
 }
 #colorGroup .blue{
-    background:blue;
+  background:blue;
 }
 #colorGroup .pink{
-    background:pink;
+  background:pink;
 }
 #colorGroup .white{
-    background:white;
+  background:white;
 }
 #colorGroup .black{
-    background:black;
+  background:black;
 }
 #colorGroup .purple{
-    background:purple;
+  background:purple;
 }
 #colorGroup .green{
-    background:green;
+  background:green;
 }
 #colorGroup .grey{
-    background:grey;
+  background:grey;
 }
 #colorGroup .red{
-    background:red;
+  background:red;
 }
 #colorGroup .brown{
-    background:brown;
+  background:brown;
 }
 #colorGroup .orange{
-    background:orange;
+  background:orange;
 }
 #colorGroup .yellow{
-    background:yellow;
+  background:yellow;
 }
 div.sizeName>div{
-    float:left;
-    width:40px;
-    height:40px;
-    margin:3% 5% 3% 0;
-    text-align:center;
-    padding-top:3%;
-    background:#f8f6f0;
-    font-size:8%;
-    color:#333333;
-    border:2px solid gray;
+  float:left;
+  width:40px;
+  height:40px;
+  margin:3% 5% 3% 0;
+  text-align:center;
+  padding-top:3%;
+  background:#f8f6f0;
+  font-size:8%;
+  color:#333333;
+  border:2px solid gray;
 }
 div.sizeName>div:hover{
-    background:#74736d;
-    color:white;
-    text-decoration:none;
-    border:2px solid black;
-    cursor:pointer;
+  background:#74736d;
+  color:white;
+  text-decoration:none;
+  border:2px solid black;
+  cursor:pointer;
 }
 .productsLeft .img a img{
-    margin-bottom:10%;
+  margin-bottom:10%;
 }
 .myInput{
-    width:15px;
-    height:15px;
+  width:15px;
+  height:15px;
 }
 .myTitle:hover{
-    text-decoration:none;
-    color:#6D6C66;
+  text-decoration:none;
+  color:#6D6C66;
 }
 .myInputA{
-    color:#74736d;
-    font-size:0.8rem;
+  color:#74736d;
+  font-size:0.8rem;
 }
 .pagesFont{
-    color:#74736d;
-    font-size:1rem;
+  color:#74736d;
+  font-size:1rem;
 }
 .myTitle{
-    display:inline-block;
-    text-align:center;
-    margin-top:5%;
-    color:#333333;
-    font-size:0.8rem;
-    font-weight:bold;
+  display:inline-block;
+  text-align:center;
+  margin-top:5%;
+  color:#333333;
+  font-size:0.8rem;
+  font-weight:bold;
 }
-.price{     
-    width:100%;
-    margin-top:3% !important;
+.price{
+  width:100%;
+  margin-top:3% !important;
 }
 .more{
-    font-size:0.9rem;
-    color:#74736d;
-    text-decoration:underline;
+  font-size:0.9rem;
+  color:#74736d;
+  text-decoration:underline;
 }
 .productsLeft ul li{
-    margin-left:5%;
-    margin-bottom:3%;
-    list-style-type:disc;
+  margin-left:5%;
+  margin-bottom:3%;
+  list-style-type:disc;
 }
 section div.productsRight{
-    margin:0;
-    width:100%;
+  margin:0;
+  width:100%;
 }
 section div.productsRight h1{
-    margin-top:-3%;
+  margin-top:-3%;
 }
 section div.productsRight>div:nth-child(2){
-    margin:1% 0 1% 0;    
-    width:100%;  
+  margin:1% 0 1% 0;
+  width:100%;
 }
 section div.productsRight>div:nth-child(2)>p{
-    float:left;
-    border-right:1px solid gray;
-    padding-right:2%;
-    margin-right:2%;
+  float:left;
+  border-right:1px solid gray;
+  padding-right:2%;
+  margin-right:2%;
 }
 section div.productsRight>div:nth-child(2)>div{
-    float:right;
+  float:right;
 }
 section div.productsRight div.displays{
-    justify-content:space-between;
-    display:flex;
+  justify-content:space-between;
+  display:flex;
 }
 section div.productsRight div.displays div.product{
-    width:100%;
-    flex-grow:1;
+  width:100%;
+  flex-grow:1;
 }
 section div.productsRight div.displays div.product img{
-    width:100%;
+  width:100%;
 }
 #pages{
-    width:100%;margin-top:4%;
+  width:100%;margin-top:4%;
 }
 #pages>div{
-    text-align:center;
+  text-align:center;
 }
 #pages div a{
-    padding-right:1%;
-    text-decoration:underline;
+  padding-right:1%;
+  text-decoration:underline;
 }
 @media screen and (min-width:1024px) and (max-width:1439px){
-    section{
-        width:98%;
-    }
+  section{
+    width:98%;
+  }
 }
 @media screen and (min-width:1440px){
-    section{
-        width:1440px;
-    }
+  section{
+    width:1400px;
+  }
 }
