@@ -200,13 +200,6 @@ INSERT INTO product_pic VALUES
 (NULL, 1, 'img/products/sm/1-1-4.jpeg','img/products/md/1-1-4.jpeg','img/products/lg/1-1-4.jpeg'),
 (NULL, 1, 'img/products/sm/1-1-5.jpeg','img/products/md/1-1-5.jpeg','img/products/lg/1-1-5.jpeg');
 
-/**用户信息**/
-INSERT INTO users VALUES
-(NULL, 'dingding', '123456', 'ding@qq.com', '13501234567', '', '丁伟', '1'),
-(NULL, 'dangdang', '123456', 'dang@qq.com', '13501234568','', '林当', '1'),
-(NULL, 'doudou', '123456', 'dou@qq.com', '13501234569', '','窦志强', '1'),
-(NULL, 'yaya', '123456', 'ya@qq.com', '13501234560', '', '秦小雅', '0');oor wedding in the country.');
-
 
 /**用户信息**/
 INSERT INTO users VALUES
